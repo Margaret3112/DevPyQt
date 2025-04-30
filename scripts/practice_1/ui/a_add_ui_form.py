@@ -24,7 +24,6 @@ from PySide6.QtWidgets import (QApplication, QCalendarWidget, QCheckBox, QFrame,
     QStatusBar, QTabWidget, QTableWidget, QTableWidgetItem,
     QTextEdit, QToolBox, QVBoxLayout, QWidget)
 
-
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():

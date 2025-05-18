@@ -7,7 +7,7 @@ PySide6-uic path_to_form.ui -o path_to_form.py
 
 from PySide6 import QtWidgets
 
-from ui.a_add_ui_form import Ui_MainWindow  # Импортируем класс формы
+from ui.login import Ui_MainWindow  # Импортируем класс формы
 
 
 class Window(QtWidgets.QMainWindow):  # наследуемся от того же класса, что и форма в QtDesigner
@@ -17,7 +17,6 @@ class Window(QtWidgets.QMainWindow):  # наследуемся от того ж�
         # Создание "прокси" переменной для работы с формой
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication()

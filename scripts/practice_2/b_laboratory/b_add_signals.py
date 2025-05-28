@@ -144,8 +144,8 @@ class Window(QtWidgets.QWidget):
         self.pushButtonClearLog.clicked.connect(self.onPushButtonClearLog)  # TODO подключить слот для очистки plainTextEditLog при нажатии на кнопку
 
         self.comboBox.currentTextChanged.connect(self.onPushButtonComboBoxEditTextChanged) # TODO подключить слот для вывода текста в plainTextEditLog при изменении выбранного элемента в comboBox
-        self.spinBox.valueChanged(self.onPushButtonSpinBoxEditTextChanged)  # TODO подключить слот для вывода значения в plainTextEditLog при изменении значения в spinBox
-        self.dateTimeEdit.dateTimeChanged(self.onPushButtonDateTimeEditTextChanged) # TODO подключить слот для вывода датывремени в plainTextEditLog при изменении датывремени в dateTimeEdit
+        self.spinBox.valueChanged.connect(self.onPushButtonSpinBoxEditTextChanged)  # TODO подключить слот для вывода значения в plainTextEditLog при изменении значения в spinBox
+        self.dateTimeEdit.dateTimeChanged.connect(self.onPushButtonDateTimeEditTextChanged) # TODO подключить слот для вывода датывремени в plainTextEditLog при изменении датывремени в dateTimeEdit
 
     # slots --------------------------------------------------------------
     def onPushButtonLineEditClicked(self) -> None:

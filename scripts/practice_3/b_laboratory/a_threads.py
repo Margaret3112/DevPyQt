@@ -60,7 +60,8 @@ class WeatherHandler(QtCore.QThread):
             response = requests.get(self.__api_url)
             data = response.json()
             self.weather.emit(data)
-            sleep(delay)
+            time.sleep(self.__delay)
+
             # TODO Примерный код ниже
             """
             response = requests.get(self.__api_url)
